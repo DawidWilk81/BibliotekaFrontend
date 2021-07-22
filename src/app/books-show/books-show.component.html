@@ -1,0 +1,6 @@
+<section *ngFor = 'let ksiazka of ksiazki' class = 'OwnedBooks' routerLink = 'ksiazka/{{ksiazka.id}}'>
+    <div class="booksDivs" (click)='ksiazkaClick(ksiazka)'>
+        <h1 >{{ksiazka.tytul}}</h1><br>
+        <img src={{ksiazka.zdjecie}} class = 'BooksOwnedImages'/>
+    </div>
+</section> 

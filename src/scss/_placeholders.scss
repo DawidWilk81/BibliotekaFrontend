@@ -1,0 +1,105 @@
+@import './_variables.scss';
+@import './_media.scss';
+//Body global
+%bodyStartVars{
+    padding:$zero;
+    margin:$zero;
+    background-color:#666666;
+}
+%flexCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 100% 100%;
+}
+
+%cofnijButton{
+    background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+    &:hover{
+        background-color:#5cbf2a;
+    }
+
+}
+    //header
+//header 1.logo 2.account
+//1
+%logoExtend{
+    background-color:$headerLogoBg;
+    float: $left;
+}
+
+//2
+%accountExtend{
+    background-color : $accountBg;
+    float: $left;
+    border:1px solid black;
+    z-index: 10;
+    animation-name: slideDown;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+%loginInputExtend{
+        margin : $loginInputMargin;
+        padding: $loginInputPadding;
+        font-size: $loginInputFontSize;
+        border-width: $loginInputBorderWidth;
+        border-color: $loginInputBorderColor;
+        background-color: $loginInputBackgroundColor;
+        color: $loginInputColor;
+        border-style: $loginInputBorderStyle;
+        border-radius: $loginInputBorderRadius;
+        box-shadow: $loginInputBoxShadow;
+        text-align: $loginInputTextAlign;
+        cursor: $pointer;
+        transition: 0.4s;
+}
+
+
+//books assigned to account div
+%booksExtend{
+    
+    clear: $both;
+    padding: $accountBooksPadding;
+}
+%UsersBooksFieldSetExtend{
+    color:rgb(194, 194, 194);
+    border:3px solid rgb(61, 61, 61);
+}
+%OwnedBooksFieldSet{
+    border:3px solid rgb(61, 61, 61);
+    color: rgb(185, 186, 187);
+}
+
+
+//all books owned container
+%booksOwnedExtend{
+    background-color: $bookOwnedBg;
+    clear: $both;
+}
+//all books owned 
+%booksOwned{
+    float: left;
+    width:25%;
+    height: 33%;
+    margin-left: 5px;
+    cursor: pointer;
+    background-color: rgb(243, 243, 243);
+    text-align: center;
+    transition: 0.5s;
+}
+
+//footer 
+%footerExtend{
+    background-color: rgb(36, 32, 32);
+    padding: 10px;
+}

@@ -1,0 +1,19 @@
+
+<div id = 'loginBar' *ngIf = 'zalogowany'>
+<button id = 'zalogujButton' (click) = 'LogInToggle()'>Zaloguj</button>
+</div>
+<!--- Logowanie użytkownika (formularz)-->
+<div id = 'account' *ngIf = 'displayLoginBar'>
+<form [FormGroup] = 'myform'>
+    <div>
+        <div class = 'accountContainer'>
+        <input [(ngModel)] = 'input.username' type='text' class='inputLogin' placeholder="Login" name = "userLogin"/>
+        <input [(ngModel)] = 'input.password' type='password' class='inputLogin' placeholder = "Haslo" name='userPassword' />
+        </div>
+        <div class = 'accountContainer'>
+        <button type = 'submit' (click) = 'LogInUser()' class='submitButtonLogin'>Zaloguj sie</button><br>
+        <button (click) = 'registerUser()' class='submitButtonLogin'>Zarejestruj sie</button>
+        </div>
+    </div>
+</form>
+</div>

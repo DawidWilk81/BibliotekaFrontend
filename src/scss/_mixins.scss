@@ -1,0 +1,10 @@
+@import './_variables.scss';
+
+@mixin minMaxBodyBuilder($w, $h){
+    min-width : $w;
+    min-height: $h;
+}
+@mixin bodyBuilder($w, $h){
+    width : $w;
+    height: $h;
+}

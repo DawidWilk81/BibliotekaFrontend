@@ -1,0 +1,22 @@
+@import '../../scss/_mixins.scss';
+@import '../../scss/_placeholders.scss';
+#cont{
+    @include bodyBuilder(100vw,100vh);
+    background-image: url('../../assets/myBooks.jpg');
+    background-size: 100% 100%;
+}
+img{
+    @include bodyBuilder(50vw, 50vh);
+    margin-left: 20%;
+}
+
+form{
+    color:white;
+}
+h2{
+    color:rgba(255, 255, 255, 0.719);
+}
+
+button{
+@extend %cofnijButton;
+}

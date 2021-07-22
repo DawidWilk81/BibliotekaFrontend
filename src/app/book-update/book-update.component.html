@@ -1,0 +1,27 @@
+<div id="cont">
+<img src='{{ksiazka.zdjecie}}'/>
+<h2>{{ksiazka.tytul}}</h2>
+
+<form>
+    <label><b><i>Tytul:
+    <input type='text' placeholder="Tytul" name='Tytul' [(ngModel)]='ksiazka.tytul' /><br><br>
+    </i></b></label>
+    <label><b><i>Autor:
+        <input type='text' placeholder="Autor" name='autor' [(ngModel)]='ksiazka.autor' /><br><br>
+    </i></b>
+    </label>
+
+    <label><b><i>Wydawnictwo:
+        <input type='text' placeholder="wydawnictwo" name='wydawnictwo' [(ngModel)]='ksiazka.wydawnictwo' /><br><br>
+    </i></b>
+    </label>
+
+    <label><b><i>Liczba stron:
+        <input type='number' placeholder="Liczba stron" name='liczba_stron' [(ngModel)]='ksiazka.liczba_stron' /><br><br>
+    </i></b>
+    </label>
+
+    <button (click)="bookUpdate()">POST</button>
+    <button (click)="back()">Cofnij</button>
+</form>
+</div>

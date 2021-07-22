@@ -1,0 +1,32 @@
+@import '../../scss/_variables.scss';
+@import '../../scss/_placeholders.scss';
+@import '../../scss/_mixins.scss';
+
+#accountBooks{
+    @include bodyBuilder($accountBooksWidth,$accountBooksHeight);
+    @extend %booksExtend;
+}
+.OwnedBooksFieldSet{
+    overflow-y: auto;
+    @include bodyBuilder($fieldSetWith, $fieldSetHeight);
+    @extend %UsersBooksFieldSetExtend;
+}
+#booksOwned{
+    background-image: url('../../assets/myBooks.jpg');
+    background-size: 100% 100%;
+    @include bodyBuilder($booksOwnedWidth, $booksOwnedHeight);
+    @extend %booksOwnedExtend;
+}
+.OwnedBooksFieldSet{
+    @include bodyBuilder($BooksFieldSetWidth, $BooksFieldSetHeight);
+    @extend %OwnedBooksFieldSet;
+    text-align: center;
+
+}
+#loggedInUser{
+    width:100%;
+    height:30vh;
+    z-index: 20;
+    background-color: red;
+    clear: both;
+}

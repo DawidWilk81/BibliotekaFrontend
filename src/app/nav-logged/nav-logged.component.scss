@@ -1,0 +1,39 @@
+@import '../../scss/_mixins.scss';
+@import '../../scss/_variables.scss';
+
+#navLogged{
+    @include bodyBuilder(100%,21.5vh);
+
+}
+
+
+ul {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: $navLoggedBg;
+
+}
+
+
+ul > li{
+    font-family: initial;
+    float: left;
+    width:20%;
+    height: 2em;
+    font-size:20px;
+    text-align: center;
+    text-decoration: none;
+    padding:10px;
+    opacity: 0.8;
+    border-left: 3px double lawngreen;
+    &:hover{
+        background-color: rgba(24, 214, 24, 0.808);
+        width:21%;
+    }
+    &:first-child{
+        border-left: none;
+    }
+}

@@ -1,0 +1,65 @@
+//img
+    //header
+
+//global 
+$zero : 0;
+$left : left;
+$center : center;
+$both: both;
+$none:none;
+$pointer:pointer;
+
+//header - logo 
+$headerLogoWidth:100%;
+$headerLogoHeight:15vh;
+$headerLogoBg: #48488844;
+
+//account div ( next to logo)
+$accountWidth:100%;
+$accountHeight:15vh;
+$accountBg: #fcfcfca2;
+// account div input values
+$loginInputWidth: 60%;
+$loginInputHeight: 80%;
+$loginInputMargin: 10px;
+$loginInputPadding:5px;
+$loginInputFontSize:15px;
+$loginInputBorderWidth:3px;
+$loginInputBorderColor:#ac9696;
+$loginInputBackgroundColor:#e4e1e1;
+$loginInputColor:#727272;
+$loginInputBorderStyle:solid;
+$loginInputBorderRadius:17px;
+$loginInputBoxShadow:-3px -3px 8px rgba(66,66,66,.75);
+$loginInputTextAlign:$center;
+//nav logged vars
+$navLoggedBg:rgba(24, 214, 24, 0.562);
+
+//books assigned to account div
+$accountBooksWidth:99%;
+$accountBooksHeight:100vh;
+$accountBooksPadding:8px;
+//books assigned to account div fieldset
+$fieldSetWith:97%;
+$fieldSetHeight:100%;
+
+//all books owned container 
+$booksOwnedWidth:99vw;
+$booksOwnedHeight:150vh;
+$bookOwnedBg:#ffececd0;
+//all books owned container fieldset
+$BooksFieldSetWidth:97%;
+$BooksFieldSetHeight:90%;
+
+//footer
+$footerWidth:97.8vw;
+$footerHeight:10vh;
+
+
+
+//Media scales
+$min-smartphone:300px;
+$max-smartphone:690px;
+$min-Ldesktop:691px;
+$max-Ldesktop:1360px;
+$min-Ldesktop:1361px;

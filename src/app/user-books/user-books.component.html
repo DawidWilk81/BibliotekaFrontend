@@ -1,0 +1,14 @@
+<!---Ksiazki uzytkownika div-->
+<div id ='accountBooks'>
+    <button (click)='back()'>cofnij</button>
+    <fieldset class="OwnedBooksFieldSet" *ngFor='let ksiazka of ksiazki |filter:user' >
+        
+    <legend>Wypożyczone książki</legend>
+    <div class="books" routerLink='ksiazka/{{ksiazka.id}}'>
+        {{ksiazka.tytul}}<br>
+        <img src='{{ksiazka.zdjecie}}' />
+    </div>
+    
+        
+    </fieldset>
+    </div>

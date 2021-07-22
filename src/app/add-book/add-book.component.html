@@ -1,0 +1,41 @@
+<div id="bookAddContainer">
+    <div id="FormBox">
+        <div>
+            <h2>Dodaj nową książkę</h2>
+            <form>
+                <label><b><i>Tytul:
+                <input type='text' placeholder="Tytul" name='Tytul' [(ngModel)]='bookBody.tytul' /><br><br>
+            </i></b>
+        </label>
+                <label><b><i>Autor:
+                    <input type='text' placeholder="Autor" name='autor' [(ngModel)]='bookBody.autor' /><br><br>
+                </i></b>
+                </label>
+
+                <label><b><i>Wydawnictwo:
+                    <input type='text' placeholder="wydawnictwo" name='wydawnictwo' [(ngModel)]='bookBody.wydawnictwo' /><br><br>
+                </i></b>
+                </label>
+
+                <label><b><i>Data premiery:
+                    <input type='date' placeholder="YYYY-MM-DD" name='data_premiery' [(ngModel)]='bookBody.data_premiery' /><br><br>
+                </i></b>
+                </label>
+
+                <label><b><i>Liczba stron:
+                    <input type='number' placeholder="Liczba stron" name='liczba_stron' [(ngModel)]='bookBody.liczba_stron' /><br><br>
+                </i></b>
+                </label>
+
+                <label><b><i>Zdjecie:
+                    <input type='file'  #fileInput (change)='onFileInput(fileInput.files)' /><br><br>
+                </i></b>
+                </label>
+
+                <button (click)="bookPost()">POST</button>
+                <button (click)='back()'>Cofnij</button>
+            </form>
+            
+        </div>
+    </div>
+</div>

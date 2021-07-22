@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    @extend %bodyStartVars;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+@import './_media.scss';
+@import './_mixins.scss';
+@import './_placeholders.scss';
+@import './_variables.scss';

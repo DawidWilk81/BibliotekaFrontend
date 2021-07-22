@@ -1,0 +1,35 @@
+
+@import '../../scss/_mixins.scss';
+@import '../../scss/_placeholders.scss';
+
+#bookAddContainer{
+    @include bodyBuilder(100vw, 100vh);
+    background-image: url('../../assets/bookAdd.jpg');
+    @extend %flexCenter;
+}
+
+#FormBox{
+    @include bodyBuilder(80vw, 85vh);
+    background-color: #88888888;
+    border:1px solid black;
+
+}
+button{
+    @extend %cofnijButton;
+    
+}
+form{
+    margin-left: 20%;
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+    color:rgb(41, 40, 40);
+    font-family: monospace;
+}
+input{
+    width:30vw;
+    height:3vh;
+    border-radius: 20px;
+    text-align: center;
+}

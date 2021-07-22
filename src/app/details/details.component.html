@@ -1,0 +1,17 @@
+<div id="cont">
+<section>
+    
+    <img src='{{ksiazka.zdjecie}}' class = 'BookImageDetails' /><br>
+    <div id="info">
+        <h3>Informacje</h3>
+        Tytuł: {{ksiazka.tytul}}<br>
+        Autor: {{ksiazka.autor}}<br>
+        Wydawnictwo: {{ksiazka.wydawnictwo}}<br>
+        liczba Stron: {{ksiazka.liczba_stron}}<br>
+
+
+    </div>
+    <button (click)= 'back()' class = 'buttonDetails'>Cofnij</button>
+    <button  (click)= 'WypozyczKsiazke()'class = 'buttonDetails'>Wypożycz</button>
+</section>
+</div>
