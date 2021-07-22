@@ -1,13 +1,17 @@
 # BibliotekaFrontend
 
 <h2>Strona główna</h2>
-![mainPage](bibliotekaDok/main_page.JPG)
+<img src='bibliotekaDok/main_page.JPG'/>
+
 <h2>Strona główna po zalogowaniu</h2>
-![loggedIn](bibliotekaDok/loggedIn.JPG)
+<img src='bibliotekaDok/loggedIn.JPG'/>
+
 <h2>Ksiażki użytkownika</h2>
-![myBooks](bibliotekaDok/myBooks.JPG)
+<img src='bibliotekaDok/myBooks.JPG'/>
+
 <h2>Książki użytkownika-Update</h2>
-![bookUpdate](bibliotekaDok/bookUpdate.JPG)
+<img src='bibliotekaDok/bookUpdate.JPG'/>
+
 <h2>Dodawanie nowej książki</h2>
-![bookAdd](bibliotekaDok/bookAdd.JPG)
+<img src='bibliotekaDok/bookAdd.JPG'/>
 
