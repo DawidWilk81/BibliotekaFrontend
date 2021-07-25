@@ -42,7 +42,6 @@
 %accountExtend{
     background-color : $accountBg;
     float: $left;
-    border:1px solid black;
     z-index: 10;
     animation-name: slideDown;
     animation-duration: 1s;
@@ -100,7 +99,7 @@
 
 //footer 
 %footerExtend{
-    background-color: rgb(68, 63, 63);
+    background-color: rgba(68, 63, 63, 0.411);
     padding: 10px;
     font-size: 30px;
 }

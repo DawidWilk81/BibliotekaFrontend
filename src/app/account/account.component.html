@@ -1,7 +1,4 @@
-
-<div id = 'loginBar' *ngIf = 'zalogowany'>
-<button id = 'zalogujButton' (click) = 'LogInToggle()'>Zaloguj</button>
-</div>
+<button id = 'zalogujButton' (click) = 'LogInToggle()'>Zaloguj się</button>
 <!--- Logowanie użytkownika (formularz)-->
 <div id = 'account' *ngIf = 'displayLoginBar'>
 <form [FormGroup] = 'myform'>
