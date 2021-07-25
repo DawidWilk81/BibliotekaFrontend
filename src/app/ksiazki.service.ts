@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class KsiazkiService {
-  baseUrl = 'http://127.0.0.1:8000/';
+  baseUrl = 'https://bibliotekaapp.herokuapp.com/';
   httpHeaders = new HttpHeaders({'Content-Type': 'application/json'})
   constructor(private Http: HttpClient) { }
 
@@ -16,7 +16,7 @@ export class KsiazkiService {
     return this.Http.get<any>(this.baseUrl + `api/Ksiazki/${id}/`);
   }
   wypozyczoneKsiazki(): Observable<any> {
-    return this.Http.get<any>(this.baseUrl + 'http://127.0.0.1:8000/api/ksiazkiUzytkownika/')
+    return this.Http.get<any>(this.baseUrl + 'https://bibliotekaapp.herokuapp.com/api/ksiazkiUzytkownika/')
    }
   WypozyczKsiazke(ksiazka): Observable<any> {
     const body = {tytul: ksiazka.tytul, opis: ksiazka.opis, zdjecie: ksiazka.zdjecie};
@@ -31,6 +31,7 @@ export class KsiazkiService {
       liczba_stron:ksiazka.liczba_stron, // typ pojazdu
       data_premiery:ksiazka.data_premiery,
       uzytkownik:ksiazka.uzytkownik,
+      is_active:ksiazka.is_active
     }
     return this.Http.put(this.baseUrl + 'api/Ksiazki/' + ksiazka.id + '/', body, 
     {headers: this.httpHeaders})

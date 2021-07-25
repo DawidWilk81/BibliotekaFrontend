@@ -1,48 +1,68 @@
 @import '../../scss/_variables.scss';
 @import '../../scss/_placeholders.scss';
 @import '../../scss/_mixins.scss';
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
 
-#accountBooks{
-    @include bodyBuilder($accountBooksWidth,$accountBooksHeight);
-    @extend %booksExtend;
+#containerBooks{
+    @include bodyBuilder(100%, 120vh);
     background-image: url('../../assets/myBooks.jpg');
     background-size: cover;
-    font-size: 20px;
 }
-.OwnedBooksFieldSet{
-    overflow-y: auto;
-    @include bodyBuilder($fieldSetWith, $fieldSetHeight);
-    @extend %UsersBooksFieldSetExtend;
-}
-#booksOwned{
-    
-    @include bodyBuilder($booksOwnedWidth, $booksOwnedHeight);
-    @extend %booksOwnedExtend;
-}
-.OwnedBooksFieldSet{
-    @include bodyBuilder($BooksFieldSetWidth, $BooksFieldSetHeight);
-    @extend %OwnedBooksFieldSet;
-    text-align: center;
-    overflow-y:auto;
 
+#userBooks{
+    @include bodyBuilder(95%,50vh);
+    padding: 10px;
+    background-color: #85575750;
+    margin:0 auto;
+    overflow-x: auto; 
 }
-button{
-@extend %cofnijButton;
-position: absolute;
-bottom: 0;
+#userBooks::-webkit-scrollbar{
+    width: 0;
 }
+
+#userBooksInActive{
+    @include bodyBuilder(95%,45vh);
+    padding: 10px;
+    background-color: #85575750;
+    margin:0 auto;
+    overflow-x: auto; 
+}
+
 .books{
     @include bodyBuilder(24%,30vh);
     float:left;
     cursor: pointer;
     font-size: 25px;
-
+    margin-left: 1%;
 }
-img{
-    width: 100%;
-    height: 100%;
-    &:hover{
-        opacity: 0.8;
-        width:90%;
+
+fieldset{
+    color:white;
+    border-color: #666666;
+}
+
+button{
+    @include bodyBuilder(100%,5%);
+    @extend %cofnijButton;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border-radius: 25px;
     }
+    
+    img{
+        width: 100%;
+        height: 100%;
+        &:hover{
+            opacity: 0.8;
+            margin-top: 6px;
+            border:1px solid rgba(196, 184, 18, 0.363);
+        }
+    }
+
+h2{
+    text-align: center;
+    font-size: 35px;
+    color: rgba(255, 255, 255, 0.973);
+    font-family: 'Merienda', cursive;
 }

@@ -2,13 +2,14 @@
 @import '../../scss/_variables.scss';
 @import '../../scss/_placeholders.scss';
 @import '../../scss/_media.scss';
+@import '../../scss/_keyframes.scss';
 
 
 
 #loginBar{
     width:100%;
     height: 2.5%;
-    background-color: #ffffff;
+    
     opacity: 0.3;
     position: absolute;
     top:0;
@@ -48,7 +49,8 @@
 #account{
     @include bodyBuilder($accountWidth, $accountHeight );
     @extend %accountExtend;
-
+    animation: slide-down 0.33s;
+    transition: all .5s ease-in-out
 
 }
 .accountContainer{

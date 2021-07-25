@@ -12,10 +12,10 @@ $pointer:pointer;
 //header - logo 
 $headerLogoWidth:100%;
 $headerLogoHeight:15vh;
-$headerLogoBg: #48488844;
 
-//account div ( next to logo)
-$accountWidth:100%;
+
+//account div 
+$accountWidth:99.9%;
 $accountHeight:15vh;
 $accountBg: #fcfcfca2;
 // account div input values
@@ -33,7 +33,7 @@ $loginInputBorderRadius:17px;
 $loginInputBoxShadow:-3px -3px 8px rgba(66,66,66,.75);
 $loginInputTextAlign:$center;
 //nav logged vars
-$navLoggedBg:rgba(24, 214, 24, 0.562);
+$navLoggedBg:rgba(39, 177, 48, 0.712);
 
 //books assigned to account div
 $accountBooksWidth:99%;
@@ -44,15 +44,15 @@ $fieldSetWith:97%;
 $fieldSetHeight:100%;
 
 //all books owned container 
-$booksOwnedWidth:99vw;
-$booksOwnedHeight:150vh;
+$booksOwnedWidth:100%;
+$booksOwnedHeight:148vh;
 $bookOwnedBg:#ffececd0;
 //all books owned container fieldset
 $BooksFieldSetWidth:97%;
 $BooksFieldSetHeight:90%;
 
 //footer
-$footerWidth:97.8vw;
+$footerWidth:99%;
 $footerHeight:10vh;
 
 

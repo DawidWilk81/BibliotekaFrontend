@@ -4,7 +4,7 @@
 %bodyStartVars{
     padding:$zero;
     margin:$zero;
-    background-color:#666666;
+
 }
 %flexCenter{
     display: flex;
@@ -14,10 +14,8 @@
 }
 
 %cofnijButton{
-    background-color:#44c767;
-	border-radius:28px;
+    background-color:#0ed643c4;
 	border:1px solid #18ab29;
-	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Arial;
@@ -25,8 +23,10 @@
 	padding:16px 31px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #2f6627;
+
+
     &:hover{
-        background-color:#5cbf2a;
+        background-color:#1bdd259f;
     }
 
 }
@@ -34,7 +34,7 @@
 //header 1.logo 2.account
 //1
 %logoExtend{
-    background-color:$headerLogoBg;
+    
     float: $left;
 }
 
@@ -83,7 +83,7 @@
 
 //all books owned container
 %booksOwnedExtend{
-    background-color: $bookOwnedBg;
+    
     clear: $both;
 }
 //all books owned 
@@ -100,6 +100,7 @@
 
 //footer 
 %footerExtend{
-    background-color: rgb(36, 32, 32);
+    background-color: rgb(68, 63, 63);
     padding: 10px;
+    font-size: 30px;
 }

@@ -1,35 +1,75 @@
 
 @import '../../scss/_mixins.scss';
 @import '../../scss/_placeholders.scss';
-
+@import '../../scss/_media.scss';
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
 #bookAddContainer{
     @include bodyBuilder(100vw, 100vh);
     background-image: url('../../assets/bookAdd.jpg');
     @extend %flexCenter;
+    @include mobile{
+        @include bodyBuilder(100vw, 120vh);
+    }
+    
 }
 
 #FormBox{
-    @include bodyBuilder(80vw, 85vh);
-    background-color: #88888888;
-    border:1px solid black;
-
+    @include bodyBuilder(85%, 93vh);
+    background-color: #8888884b;
+    border:1.2px solid #a1a1a136;
+    text-align: center;
+    color:white;
+    font-size: 20px;
+    font-family: 'Merienda', cursive;
+    @include mobile{
+        @include bodyBuilder(90%, 95vh);
+    }
+    @include tablet{
+        @include bodyBuilder(90%, 93vh);
+    }
+    @include desktop{
+        @include bodyBuilder(90%, 93vh);
+    }
 }
 button{
     @extend %cofnijButton;
-    
+    @include bodyBuilder(40%,20%);
+    border-radius: 10px;
+    margin-left: 15px;
+    @include mobile{
+        @include bodyBuilder(40%, 18%);
+    }
+    @include tablet{
+        @include bodyBuilder(40%, 15%);
+    }
+    @include desktop{
+        @include bodyBuilder(40%, 15%);
+    }
 }
-form{
-    margin-left: 20%;
-}
+
 h2{
     text-align: center;
-    font-size: 30px;
+    font-size: 35px;
     color:rgb(41, 40, 40);
-    font-family: monospace;
+    font-family: 'Merienda', cursive;
 }
 input{
-    width:30vw;
+    width:70%;
     height:3vh;
     border-radius: 20px;
     text-align: center;
+    transition: 0.3s;
+    &:focus{
+        width: 35vw;
+        height: 3.2vh;
+    }
+    @include mobile{
+        @include bodyBuilder(80%, 3vh);
+    }
+    @include tablet{
+        @include bodyBuilder(80%, 3vh);
+    }
+    @include desktop{
+        @include bodyBuilder(80%, 3vh);
+    }
 }

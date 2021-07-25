@@ -1,0 +1,7 @@
+@import '../../scss/_mixins.scss';
+
+#container{
+@include bodyBuilder(100%,175vh);    
+background-image: url('../../assets/myBooks.jpg');
+background-size: 100% 100%;
+}

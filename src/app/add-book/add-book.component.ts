@@ -11,7 +11,7 @@ import { Location } from '@angular/common';
 export class AddBookComponent implements OnInit {
 
   constructor(private _ks:KsiazkiService, private _router:Router, private http:HttpClient, private location:Location) { }
-  baseurl = 'http://127.0.0.1:8000/'
+  baseurl = 'https://bibliotekaapp.herokuapp.com/'
   bookBody;
   file:any;
   back(){
@@ -25,6 +25,7 @@ export class AddBookComponent implements OnInit {
       data_premiery:'',
       liczba_stron:'',
       zdjecie:File,
+      is_active:true,
     }
   }
 
@@ -46,6 +47,7 @@ export class AddBookComponent implements OnInit {
   body.append('data_premiery', JSON.stringify(this.bookBody.data_premiery));
   body.append('liczba_stron', JSON.stringify(this.bookBody.liczba_stron));
   body.append('uzytkownik', JSON.stringify(user));
+  body.append('is_active', JSON.stringify(this.bookBody.is_active));
   return this.http.post(this.baseurl + 'api/Ksiazki/', body).subscribe(
     data => {
       alert("dodano do bazy danych");

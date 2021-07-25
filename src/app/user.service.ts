@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
 })
 export class UserService {
   constructor( private Http : HttpClient) { }
-  baseurl='http://127.0.0.1:8000/';
+  baseurl='https://bibliotekaapp.herokuapp.com/';
   registerNewUser(userData): Observable<any> {
     return this.Http.post(this.baseurl + 'api/register/', userData);
   }

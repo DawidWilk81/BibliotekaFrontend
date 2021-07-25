@@ -9,6 +9,7 @@ import { Location } from '@angular/common';
   providers: [KsiazkiService],
 })
 export class BookUpdateComponent implements OnInit {
+  
   ksiazka:any = {
     id:-1,
     tytul:'',
@@ -16,7 +17,8 @@ export class BookUpdateComponent implements OnInit {
     wydawnictwo:'',
     data_premiery:'',
     liczba_stron:'',
-    uzytkownik:''
+    uzytkownik:'',
+    is_active:1,
   };
   back(){
     this._location.back();

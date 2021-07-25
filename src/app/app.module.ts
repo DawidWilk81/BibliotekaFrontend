@@ -18,6 +18,8 @@ import { NavLoggedComponent } from './nav-logged/nav-logged.component';
 import { AddBookComponent } from './add-book/add-book.component';
 import { FilterPipe } from './filter.pipe';
 import { BookUpdateComponent } from './book-update/book-update.component';
+import { FilterActivePipe } from './filter-active.pipe';
+import { AllBooksPipe } from './all-books.pipe';
 
 
 @NgModule({
@@ -36,6 +38,8 @@ import { BookUpdateComponent } from './book-update/book-update.component';
     AddBookComponent,
     FilterPipe,
     BookUpdateComponent,
+    FilterActivePipe,
+    AllBooksPipe,
     
   ],
   imports: [

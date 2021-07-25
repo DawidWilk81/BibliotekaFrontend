@@ -1,14 +1,17 @@
-<!---Ksiazki uzytkownika div-->
-<div id ='accountBooks'>
-    <button (click)='back()'>cofnij</button>
-    <fieldset class="OwnedBooksFieldSet" *ngFor='let ksiazka of ksiazki |filter:user' >
-        
-    <legend>Wypożyczone książki</legend>
-    <div class="books" routerLink='ksiazka/{{ksiazka.id}}'>
-        {{ksiazka.tytul}}<br>
-        <img src='{{ksiazka.zdjecie}}' />
-    </div>
-    
-        
-    </fieldset>
-    </div>
+<div id="containerBooks">
+
+        <div id="userBooks">
+            <h2>Moje książki</h2>
+            <div class="books" routerLink='ksiazka/{{ksiazka.id}}' *ngFor='let ksiazka of ksiazki |filter:user' >
+                    <img src='{{ksiazka.zdjecie}}' />
+            </div>
+
+        </div>
+        <div id="userBooksInActive">
+            <h2>Nieaktywne książki</h2>
+            <div class="books" routerLink='ksiazka/{{ksiazka.id}}' *ngFor='let ksiazka of ksiazki |filterActive:user' >
+                <img src='{{ksiazka.zdjecie}}' />
+        </div>
+        </div>
+</div>
+<button (click)='back()'>Cofnij</button>

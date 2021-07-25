@@ -1,27 +1,39 @@
 <div id="cont">
 <img src='{{ksiazka.zdjecie}}'/>
 <h2>{{ksiazka.tytul}}</h2>
-
+<div id="formCont">
 <form>
-    <label><b><i>Tytul:
+    <b><i>Tytul:<br>
     <input type='text' placeholder="Tytul" name='Tytul' [(ngModel)]='ksiazka.tytul' /><br><br>
-    </i></b></label>
-    <label><b><i>Autor:
+    </i></b>
+    <b><i>Autor:<br>
         <input type='text' placeholder="Autor" name='autor' [(ngModel)]='ksiazka.autor' /><br><br>
     </i></b>
-    </label>
+    
 
-    <label><b><i>Wydawnictwo:
+    <b><i>Wydawnictwo:<br>
         <input type='text' placeholder="wydawnictwo" name='wydawnictwo' [(ngModel)]='ksiazka.wydawnictwo' /><br><br>
     </i></b>
-    </label>
+   
 
-    <label><b><i>Liczba stron:
+    <b><i>Liczba stron:<br>
         <input type='number' placeholder="Liczba stron" name='liczba_stron' [(ngModel)]='ksiazka.liczba_stron' /><br><br>
     </i></b>
-    </label>
+    
+    <b><i>Stan opublikowania:<br>
+        <p>1:opublikowany</p>
+        <p>0:Wstrzymany od publikacji</p>
+        <input type='number' placeholder="Stan" name='Stan' [(ngModel)]='ksiazka.is_active' /><br><br>
+    </i></b>
 
-    <button (click)="bookUpdate()">POST</button>
-    <button (click)="back()">Cofnij</button>
+
 </form>
+
+</div>
+<div id="options">
+    <br>
+    <button (click)="bookUpdate()">Zaktualizuj</button>
+    <button (click)="back()">Cofnij</button>
+ 
+</div>
 </div>

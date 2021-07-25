@@ -1,8 +1,8 @@
 @import '../../scss/_mixins.scss';
 @import '../../scss/_variables.scss';
-
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
 #navLogged{
-    @include bodyBuilder(100%,21.5vh);
+    @include bodyBuilder(100%,15%);
 
 }
 
@@ -19,7 +19,7 @@ ul {
 
 
 ul > li{
-    font-family: initial;
+    font-family: 'Merienda', cursive;
     float: left;
     width:20%;
     height: 2em;
@@ -28,9 +28,10 @@ ul > li{
     text-decoration: none;
     padding:10px;
     opacity: 0.8;
-    border-left: 3px double lawngreen;
+    border:1px solid green;
+    color:rgba(255, 255, 255, 0.966);
     &:hover{
-        background-color: rgba(24, 214, 24, 0.808);
+        background-color: rgba(24, 214, 24, 0.445);
         width:21%;
     }
     &:first-child{

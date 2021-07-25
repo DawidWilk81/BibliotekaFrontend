@@ -3,13 +3,27 @@
     
     <img src='{{ksiazka.zdjecie}}' class = 'BookImageDetails' /><br>
     <div id="info">
-        <h3>Informacje</h3>
-        Tytuł: {{ksiazka.tytul}}<br>
-        Autor: {{ksiazka.autor}}<br>
-        Wydawnictwo: {{ksiazka.wydawnictwo}}<br>
-        liczba Stron: {{ksiazka.liczba_stron}}<br>
-
-
+        <table style="width: 100%;" border="2" cellpadding="7">
+<tbody>
+    <caption>Informacje</caption>
+<tr>
+<td>Tytuł:</td>
+<td>{{ksiazka.tytul}}</td>
+</tr>
+<tr>
+<td>Autor:</td>
+<td>{{ksiazka.autor}}</td>
+</tr>
+<tr>
+<td>Wydawnictwo:</td>
+<td>{{ksiazka.wydawnictwo}}</td>
+</tr>
+<tr>
+<td>liczba Stron:</td>
+<td>{{ksiazka.liczba_stron}}</td>
+</tr>
+</tbody>
+</table>
     </div>
     <button (click)= 'back()' class = 'buttonDetails'>Cofnij</button>
     <button  (click)= 'WypozyczKsiazke()'class = 'buttonDetails'>Wypożycz</button>
